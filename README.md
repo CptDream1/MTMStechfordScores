@@ -1,3 +1,3 @@
 # MTMStechfordScores
 
-#Zeeshan bhai is a gay boy.
+Zeeshan bhai is a gay boy.
