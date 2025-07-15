@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Score Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Score Calculator</h1>
+    <form id="scoreForm">
+      <input type="text" id="studentName" placeholder="Student Name" required>
+
+      <div class="input-group">
+        <label>Purple Squares:</label>
+        <input type="number" id="purple" value="0" min="0">
+      </div>
+      <div class="input-group">
+        <label>Orange Squares:</label>
+        <input type="number" id="orange" value="0" min="0">
+      </div>
+      <div class="input-group">
+        <label>Green Squares:</label>
+        <input type="number" id="green" value="0" min="0">
+      </div>
+      <div class="input-group">
+        <label>Blue Squares:</label>
+        <input type="number" id="blue" value="0" min="0">
+      </div>
+      <div class="input-group">
+        <label>Pink Squares:</label>
+        <input type="number" id="pink" value="0" min="0">
+      </div>
+      <div class="input-group">
+        <label>Gold Squares:</label>
+        <input type="number" id="gold" value="0" min="0">
+      </div>
+
+      <button type="submit">Add Student Score</button>
+    </form>
+
+    <h2>All Student Scores</h2>
+    <ul id="scoreList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('Service Worker Registered'));
+  }
+</script>
+</body>
+</html>
